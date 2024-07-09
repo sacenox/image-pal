@@ -1,11 +1,11 @@
-package imageTools
+package imagePal
 
 import (
 	"github.com/h2non/bimg"
 )
 
-func Resize(buffer []byte, width int, height int) (resizedBuffer []byte, err error) {
-	resizedBuffer, err = bimg.NewImage(buffer).Resize(width, height)
+func Resize(buffer *[]byte, width int, height int) (resizedBuffer []byte, err error) {
+	resizedBuffer, err = bimg.NewImage(*buffer).Resize(width, height)
 	if err != nil {
 		return nil, err
 	}
