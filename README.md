@@ -11,3 +11,7 @@ go run cmd/main.go
 ```
 
 On your web browser, you can now use the HTTP API, see the code for reference.
+
+Uses:
+
+- [bimg](https://github.com/h2non/bimg)
